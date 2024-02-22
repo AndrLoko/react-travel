@@ -51,7 +51,7 @@ export default function Navbar() {
               </button>
             </ul>
 
-            <div className="closeNavnar">
+            <div className="closeNavbar">
             <AiFillCloseCircle className='icon'/>
             </div>
         </div>
