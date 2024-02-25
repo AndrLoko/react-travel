@@ -2,6 +2,12 @@ import React from 'react'
 import './home.scss'
 import video from '../../assets/video.mp4'
 import { GrLocation } from "react-icons/gr";
+import { HiFilter } from "react-icons/hi";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { SiTripadvisor } from "react-icons/si";
+import { BsListTask } from "react-icons/bs";
+import { TbApps } from "react-icons/tb";
 
 export default function Home() {
   return (
@@ -26,8 +32,10 @@ export default function Home() {
 
             <div className="destinationInput">
               <label htmlFor="city">Search your destination</label>
-              <input type="input text" placeholder='Enter name here...' />
-              <GrLocation className='icon'/>
+              <div className="input flex">
+                <input type="input text" className='' placeholder='Enter name here...' />
+                <GrLocation className='icon'/>
+              </div>
             </div>
 
             <div className="dateInput">
@@ -47,6 +55,23 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="searchOptions flex">
+              <HiFilter className='icon'/>
+              <span>MORE FILTER</span>
+            </div>
+        </div>
+
+        <div className="homeFooterIcons flex">
+          <div className="rightIcons">
+            <FiFacebook className='icon' />
+            <FaInstagram className='icon' />
+            <SiTripadvisor className='icon' />
+          </div>
+
+          <div className="leftIcons">
+            <BsListTask className='icon' />
+            <TbApps className='icon' />
+          </div>
         </div>
       </div> 
     </section>
