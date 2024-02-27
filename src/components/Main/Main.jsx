@@ -1,7 +1,12 @@
 import React from 'react'
 import './main.scss'
-import img from '../../assets/img.png'
+
+// import icons
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BsClipboardCheck } from "react-icons/bs";
+
+// import images
+import img from '../../assets/img.png'
 
 const Date = [
   {
@@ -116,8 +121,26 @@ export default function Main() {
                   <div className="cardInfo">
                     <h4 className='destTitle'>{destTitle}</h4>
                     <span className="continent flex">
-
+                      <HiOutlineLocationMarker className='icon'/>
+                      <span className="name">{location}</span>
                     </span>
+
+                    <div className="fees flex">
+                      <div className="grade">
+                        <span>{grade}<small>+1</small></span>
+                      </div>
+                      <div className="price">
+                        <h5>{fees}</h5>
+                      </div>
+                      
+                      <div className="desc">
+                        <p>{description}</p>
+                      </div>
+
+                       <button className="btn flex">
+                        DETAILS <BsClipboardCheck />
+                       </button>
+                    </div>
                   </div>
                 </div>
               )
