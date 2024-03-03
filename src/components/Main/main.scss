@@ -75,6 +75,24 @@
                     }
                 }
             }
+
+            .cardInfo {
+                padding: 1rem; 
+
+               .destTitle {
+                    color: var(--blackColor);
+                    font-size: 1.25rem;
+               }
+
+               .continent {
+                    gap: .5rem;
+
+                    .icon {
+                        color: var(--textColor);
+                        font-size: 18px;
+                    }
+               }
+            }
         }
 
     }
