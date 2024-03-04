@@ -3,6 +3,10 @@ import './footer.scss'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <section className='footer'>
+      <div className="videoDiv">
+        <video src=""></video>
+      </div>
+    </section>
   )
 }
